@@ -5,10 +5,10 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: ""
-  selector:
-    matchLabels:
-      name: web-pv
+  storageClassName: standard
   resources:
     requests:
       storage: 1Gi
+  selector:
+    matchLabels:
+      type: local

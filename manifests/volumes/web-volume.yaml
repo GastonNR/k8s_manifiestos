@@ -1,14 +1,14 @@
-apiVersion: v1
+¿apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: web-pv
   labels:
-    name: web-pv 
+    type: local
 spec:
   capacity:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: ""
+  storageClassName: standard
   hostPath:
     path: /mnt/sitio-web

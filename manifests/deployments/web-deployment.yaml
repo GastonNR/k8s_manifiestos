@@ -6,21 +6,21 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web
+      app: web-app
   template:
     metadata:
       labels:
-        app: web
+        app: web-app
     spec:
       containers:
-        - name: web-container
-          image: nginx:alpine
+        - name: static-website
+          image: static-website:latest
           ports:
             - containerPort: 80
           volumeMounts:
-            - mountPath: /usr/share/nginx/html
-              name: web-content
+            - name: web-storage
+              mountPath: /usr/share/nginx/html
       volumes:
-        - name: web-content
+        - name: web-storage
           persistentVolumeClaim:
             claimName: web-pvc
