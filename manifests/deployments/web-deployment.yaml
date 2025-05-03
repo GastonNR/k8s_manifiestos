@@ -15,6 +15,7 @@ spec:
       containers:
         - name: static-website
           image: static-website:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
           volumeMounts:
