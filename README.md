@@ -1,6 +1,6 @@
-#Guía de uso.
+# Guía de uso.
 Los archivos yaml contenidos en el repositorio permiten desplegar un sitio web estático con html, css y js. desde una unidad de imagen nginx que monta su contenido desde un volumen persistente.
-La estructura de archivos es:
+## La estructura de archivos es:
 sitio-web
 ├── manifest/
 │   ├── deployments/
@@ -18,18 +18,18 @@ sitio-web
     |__ Dockerfile
     |__ assets/
 
-Requisitos:
+## Requisitos:
 Minikube
 Docker
 Git
 Bash 
 Contar con token de autenticación
 
-Crear directorio 
+## Crear directorio 
 mkdir proyecto_static-web
 Clonar los repositorios:
   
-Dentro del directorio proyecto_static-web:
+## Dentro del directorio proyecto_static-web:
 
 Para la página web: Primero realiza un fork del repositorio original, luego clónalo con:
 git clone git@github.com:GastonNR/k8s_manifiestos.git
