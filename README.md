@@ -1,3 +1,4 @@
+#Guía de uso.
 Los archivos yaml contenidos en el repositorio permiten desplegar un sitio web estático con html, css y js. desde una unidad de imagen nginx que monta su contenido desde un volumen persistente.
 La estructura de archivos es:
 sitio-web
